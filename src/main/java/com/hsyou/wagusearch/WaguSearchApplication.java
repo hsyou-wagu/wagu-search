@@ -10,12 +10,14 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 
 import java.text.SimpleDateFormat;
 import java.util.Properties;
 
 @Slf4j
+@EnableEurekaClient
 @SpringBootApplication
 public class WaguSearchApplication implements CommandLineRunner {
 
